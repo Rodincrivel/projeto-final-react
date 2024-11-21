@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+Projeto Final React - Charlie Loja de Doces
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Descrição
 
-## Available Scripts
+Este é o projeto final para a loja Charlie Loja de Doces, desenvolvido utilizando React. O sistema possui uma área administrativa que permite aos administradores gerenciar produtos, categorias e outros administradores. Também é possível realizar o login seguro para acessar funcionalidades específicas.
 
-In the project directory, you can run:
+O objetivo principal deste projeto é criar uma plataforma de gerenciamento eficiente para produtos e categorias, integrando um design responsivo e reutilizando componentes previamente criados na área do usuário. A aplicação é baseada em React, utilizando CSS personalizado e integrando fontes personalizadas para melhorar a experiência do usuário.
 
-### `npm start`
+Estrutura do Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Diretórios Principais
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+src/components: Contém os componentes reutilizáveis como o Header.
 
-### `npm test`
+src/pages: Páginas principais da aplicação como AdminHomePage, AdminListPage, ProductListPage, entre outras.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+src/styles: Estilos CSS utilizados em diferentes partes da aplicação, garantindo um layout consistente.
 
-### `npm run build`
+public: Arquivos públicos, como o logo.svg utilizado no cabeçalho.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Principais Páginas Implementadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+AdminHomePage: Página inicial da área do administrador, contendo um menu para navegação entre as opções de gerenciamento.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+AdminListPage: Página para listar e gerenciar os administradores.
 
-### `npm run eject`
+CategoryListPage e CategoryCreateEditPage: Páginas para listar, criar e editar as categorias de produtos.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ProductListPage, ProductCreatePage, e ProductEditPage: Páginas para listar, criar e editar produtos.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+LoginPage: Página de login para administradores acessarem a área restrita.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Funcionalidades
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Autenticação de Administradores: O administrador faz login para acessar funcionalidades como gerenciamento de produtos e categorias.
 
-## Learn More
+Gerenciamento de Produtos, Categorias e Administradores: Criação, edição e exclusão de registros através de um backend que responde às requisições do frontend React.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Header Reutilizável: O componente Header é utilizado para manter um layout padronizado em toda a aplicação, com navegação e logo em SVG.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Tecnologias Utilizadas
 
-### Code Splitting
+React: Biblioteca JavaScript para criação da interface de usuário.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React Router: Para gerenciamento de rotas e navegação entre as páginas.
 
-### Analyzing the Bundle Size
+Axios: Para fazer requisições HTTP e consumir a API do backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+CSS Modules: Utilização de arquivos CSS personalizados para estilização dos componentes e páginas.
 
-### Making a Progressive Web App
+Bebas Neue e Poppins: Fontes utilizadas para dar uma identidade visual única ao site.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Como Rodar o Projeto
 
-### Advanced Configuration
+Clone o repositório na sua máquina local:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+git clone https://github.com/Rodincrivel/projeto-final-react.git
 
-### Deployment
+Instale as dependências necessárias:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+npm install
 
-### `npm run build` fails to minify
+Rode o servidor de desenvolvimento:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
+
+Abra o navegador e acesse: http://localhost:3000.
+
+Estrutura do Header
+
+O Header foi estilizado e reaproveitado da área do usuário. Contém uma seção superior com uma linha decorativa, logo central e uma seção de navegação inferior com as opções "Home", "Produtos", "Categorias" e "Administradores".
+
+Melhorias Futuras
+
+Autenticação e Autorizacao: Implementar um sistema de autenticação mais seguro e proteção de rotas.
+
+Validação de Formulários: Adicionar mais validações e feedback ao usuário nos formulários de criação e edição.
+
+Melhoria na Experiência do Usuário: Fazer ajustes na interface para torná-la mais amigável e responsiva em diferentes tamanhos de tela.
+
+Considerações Finais
+
+Este projeto foca em criar uma área administrativa completa e eficiente para a gestão da loja Charlie Loja de Doces, utilizando boas práticas de desenvolvimento com React. Estamos abertos a sugestões e contribuições para tornar o sistema ainda melhor.
+

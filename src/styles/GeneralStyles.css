@@ -5,37 +5,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Fonte e fundo padrão */
-  body {
+}
+
+/* Fonte e fundo padrão */
+body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
-  }
-  
-  /* Estilo padrão para botões */
-  button {
+}
+
+/* Estilo padrão para o header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #591F12; /* Definindo a cor do header conforme o projeto */
+    z-index: 1000; /* Para garantir que o header esteja acima de outros elementos */
+}
+
+/* Adicionando espaçamento ao conteúdo para não ficar coberto pelo header */
+main {
+    padding-top: 200px; /* Ajustar conforme a altura do header */
+}
+
+/* Estilo padrão para botões */
+button {
     background-color: #007bff;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #0056b3;
-  }
-  
-  /* Estilo para inputs */
-  input, select, textarea {
+}
+
+/* Estilo para inputs */
+input, select, textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-  }
-  
+}
