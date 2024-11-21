@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Estilização geral para o body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif; /* Define a fonte Poppins como padrão */
+}
+
+/* Container principal do formulário de login */
+.login-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 894px;
+    height: 520px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #591F12;
+}
+
+.div-content {
+    width: 432px;
+    height: 500px;
+    background-color: #FEDB37;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    text-align: start;
+    padding: 48px;
+}
+
+.div-firula {
+    width: 432px;
+    height: 500px;
+    background-color: #591F12;
+}
+/* Estilização do título */
+.login-container h1 {
+    font-family: 'Bebas Neue', cursive; /* Fonte Bebas Neue para o título */
+    margin-bottom: 20px;
+    color: #591F12;
+}
+
+/* Estilização dos campos de input */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; /* Define a fonte Poppins como padrão */
+}
+
+.login-container input :focus {
+    color: #591F12;
+}
+
+.login-container label {
+    font-family: 'Poppins', sans-serif; /* Define a fonte Poppins como padrão */
+    color: #591F12;
+    font-size: 20px;
+}
+
+/* Estilização do botão */
+.login-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #659C57;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Bebas Neue', cursive; /* Fonte Bebas Neue para o título */
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #548348;
+}
+
+/* Mensagem de erro */
+.login-container p {
+    color: red;
+    font-size: 14px;
+}

@@ -1,7 +1,6 @@
-// src/pages/LoginPage.jsx
-
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/LoginPage.css'; // Importando o CSS específico
 
 function LoginPage() {
   const [email, setEmail] = useState('');
@@ -39,20 +38,26 @@ function LoginPage() {
   };
 
   return (
-    <div>
-      <h1>Login do Administrador</h1>
-      {erro && <p style={{ color: 'red' }}>{erro}</p>}
-      <form onSubmit={handleLogin}>
-        <div>
-          <label>E-mail:</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        </div>
-        <div>
-          <label>Senha:</label>
-          <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} required />
-        </div>
-        <button type="submit">Entrar</button>
-      </form>
+    <div className="login-container">
+
+      <div className='div-content'>
+        <h1>ENTRAR</h1>
+        {erro && <p>{erro}</p>}
+        <form onSubmit={handleLogin}>
+          <div>
+            <label>E-mail:</label>
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          </div>
+          <div>
+            <label>Senha:</label>
+            <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} required />
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+      <div className='div-firula'>
+        <h2>Loja de Doces</h2>
+      </div>
     </div>
   );
 }
