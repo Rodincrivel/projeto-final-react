@@ -1,0 +1,52 @@
+{
+  "administrators": [
+    {
+      "id": 1,
+      "ADM_ID": 1,
+      "ADM_NOME": "Admin",
+      "ADM_EMAIL": "admin@example.com",
+      "ADM_SENHA": "admin123",
+      "ADM_ATIVO": true
+    }
+  ],
+  "users": [],
+  "addresses": [],
+  "products": [
+    {
+      "id": "df37",
+      "PRODUTO_NOME": "Produto Teste",
+      "PRODUTO_DESC": "Testando Funcionalidade ",
+      "PRODUTO_PRECO": 5,
+      "PRODUTO_DESCONTO": 1,
+      "CATEGORIA_ID": null,
+      "PRODUTO_ATIVO": true
+    }
+  ],
+  "product_stock": [],
+  "product_images": [
+    {
+      "id": "53ff",
+      "IMAGEM_URL": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
+      "IMAGEM_ORDEM": 1,
+      "PRODUTO_ID": "3a1a"
+    },
+    {
+      "id": "df08",
+      "IMAGEM_URL": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
+      "IMAGEM_ORDEM": 1,
+      "PRODUTO_ID": "df37"
+    }
+  ],
+  "categories": [
+    {
+      "id": "ad4f",
+      "CATEGORIA_NOME": "Categoria Teste",
+      "CATEGORIA_DESC": "Testando Funcionalidade da Categoria",
+      "CATEGORIA_ATIVO": true
+    }
+  ],
+  "orders": [],
+  "order_items": [],
+  "order_statuses": [],
+  "cart_items": []
+}
