@@ -39,7 +39,6 @@ function LoginPage() {
 
   return (
     <div className="login-container">
-
       <div className='div-content'>
         <h1>ENTRAR</h1>
         {erro && <p>{erro}</p>}
@@ -56,7 +55,16 @@ function LoginPage() {
         </form>
       </div>
       <div className='div-firula'>
-        <h2>Loja de Doces</h2>
+        <div className="store-name-arc">
+          <svg width="293.1" height="59.41" viewBox="0 0 293.1 59.41">
+            <path id="arcPath" d="M0,59.41 Q146.55,30 293.1,59.41" fill="transparent" />
+            <text fontFamily="Bebas Neue" fontSize="48px" fill="#FEDB37">
+              <textPath href="#arcPath" startOffset="50%" textAnchor="middle">
+                LOJA DE DOCES
+              </textPath>
+            </text>
+          </svg>
+        </div>
       </div>
     </div>
   );
