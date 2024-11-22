@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../styles/AdminListPage.css'; // Importando o CSS específico
-
+import Header from '../components/Header'; // Importar o Header que criamos
 
 function AdminListPage() {
   const navigate = useNavigate();
@@ -69,6 +69,7 @@ function AdminListPage() {
   // Renderização da Tabela de Administradores
   return (
     <div>
+      <Header />
       <h1>Listagem de Administradores</h1>
 
       {/* Campo de Pesquisa */}

@@ -4,10 +4,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import '../styles/AdminCreateEditPage.css'; // Importando o CSS específico
 import Header from '../components/Header'; // Importando o Header
 
-
-
-
-
 function AdminCreateEditPage() {
     const navigate = useNavigate();
     const { id } = useParams(); // Para obter o ID do administrador a ser editado, se houver
@@ -77,6 +73,7 @@ function AdminCreateEditPage() {
     // Renderização do Formulário
     return (
         <div>
+            <Header />
             <h1>{id ? 'Editar Administrador' : 'Cadastrar Administrador'}</h1>
             {erro && <p style={{ color: 'red' }}>{erro}</p>}
             <form onSubmit={handleSubmit}>
@@ -132,7 +129,7 @@ function AdminCreateEditPage() {
                 </div>
             </form>
         </div>
-   );
+    );
 }
 
 export default AdminCreateEditPage;

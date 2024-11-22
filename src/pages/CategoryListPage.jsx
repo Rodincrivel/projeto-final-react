@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../styles/CategoryListPage.css'; // Importando o CSS específico
-
+import Header from '../components/Header'; // Importar o Header que criamos
 
 function CategoryListPage() {
   const navigate = useNavigate();
@@ -69,6 +69,7 @@ function CategoryListPage() {
   // Renderização da Tabela de Categorias
   return (
     <div>
+      <Header />
       <h1>Listagem de Categorias</h1>
 
       {/* Campo de Pesquisa */}

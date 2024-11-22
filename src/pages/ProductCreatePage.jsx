@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import ModalCategoria from '../components/ModalCategoria';
 import '../styles/ProductCreateEditPage.css'; // Importando o CSS específico
-
+import Header from '../components/Header'; // Importar o Header que criamos
 
 function ProductCreatePage() {
   const navigate = useNavigate();
@@ -13,6 +13,7 @@ function ProductCreatePage() {
   const [descricao, setDescricao] = useState('');
   const [preco, setPreco] = useState('');
   const [desconto, setDesconto] = useState('');
+  const [quantidade, setQuantidade] = useState(''); // Novo estado para quantidade
   const [categorias, setCategorias] = useState([]);
   const [categoriaSelecionada, setCategoriaSelecionada] = useState('');
   const [ativo, setAtivo] = useState(true);
@@ -47,7 +48,7 @@ function ProductCreatePage() {
     e.preventDefault();
 
     // Validações simples
-    if (!nome || !descricao || !preco || !categoriaSelecionada) {
+    if (!nome || !descricao || !preco || !categoriaSelecionada || !quantidade) {
       setErro('Por favor, preencha todos os campos obrigatórios.');
       return;
     }
@@ -59,6 +60,7 @@ function ProductCreatePage() {
         PRODUTO_DESC: descricao,
         PRODUTO_PRECO: parseFloat(preco),
         PRODUTO_DESCONTO: parseFloat(desconto),
+        PRODUTO_QTD: parseInt(quantidade), // Adicionando a quantidade ao novo produto
         CATEGORIA_ID: parseInt(categoriaSelecionada),
         PRODUTO_ATIVO: ativo
       };
@@ -89,6 +91,7 @@ function ProductCreatePage() {
   // Renderização do Formulário
   return (
     <div>
+      <Header />
       <h1>Cadastrar Produto</h1>
       {erro && <p style={{ color: 'red' }}>{erro}</p>}
       <form onSubmit={handleSubmit}>
@@ -131,6 +134,17 @@ function ProductCreatePage() {
             type="number"
             value={desconto}
             onChange={(e) => setDesconto(e.target.value)}
+          />
+        </div>
+
+        {/* Campo Quantidade */}
+        <div>
+          <label>Quantidade:</label>
+          <input
+            type="number"
+            value={quantidade}
+            onChange={(e) => setQuantidade(e.target.value)}
+            required
           />
         </div>
 

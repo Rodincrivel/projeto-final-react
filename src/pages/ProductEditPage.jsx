@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import ModalCategoria from '../components/ModalCategoria';
 import '../styles/ProductCreateEditPage.css'; // Importando o CSS específico
+import Header from '../components/Header'; // Importar o Header que criamos
 
 
 function ProductEditPage() {
@@ -117,6 +118,7 @@ function ProductEditPage() {
   // Renderização do Formulário
   return (
     <div>
+      <Header />
       <h1>Editar Produto</h1>
       {erro && <p style={{ color: 'red' }}>{erro}</p>}
       <form onSubmit={handleSubmit}>

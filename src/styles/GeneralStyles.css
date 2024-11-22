@@ -53,3 +53,16 @@ input, select, textarea {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
+.img-home {
+    width: 250px;
+    height: 250px;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 84px;
+}

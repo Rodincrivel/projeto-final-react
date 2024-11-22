@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import '../styles/CategoryCreateEditPage.css'; // Importando o CSS específico
-
+import Header from '../components/Header'; // Importar o Header que criamos
 
 function CategoryCreateEditPage() {
   const navigate = useNavigate();
@@ -71,6 +71,7 @@ function CategoryCreateEditPage() {
   // Renderização do Formulário
   return (
     <div>
+      <Header />
       <h1>{id ? 'Editar Categoria' : 'Cadastrar Categoria'}</h1>
       {erro && <p style={{ color: 'red' }}>{erro}</p>}
       <form onSubmit={handleSubmit}>

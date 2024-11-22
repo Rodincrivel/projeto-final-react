@@ -13,11 +13,12 @@
   "addresses": [],
   "products": [
     {
-      "id": "df37",
-      "PRODUTO_NOME": "Produto Teste",
-      "PRODUTO_DESC": "Testando Funcionalidade ",
-      "PRODUTO_PRECO": 5,
-      "PRODUTO_DESCONTO": 1,
+      "id": "10d7",
+      "PRODUTO_NOME": "Fini",
+      "PRODUTO_DESC": "Produto Fini de Alta qualdiade",
+      "PRODUTO_PRECO": 10,
+      "PRODUTO_DESCONTO": 2,
+      "PRODUTO_QTD": 500,
       "CATEGORIA_ID": null,
       "PRODUTO_ATIVO": true
     }
@@ -35,6 +36,30 @@
       "IMAGEM_URL": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
       "IMAGEM_ORDEM": 1,
       "PRODUTO_ID": "df37"
+    },
+    {
+      "id": "2ddc",
+      "IMAGEM_URL": "https://fastly.picsum.photos/id/292/200/300.jpg?grayscale&hmac=GrU_8mWUmWlDt15oirV0SNVhrKtaD9StFuzXchoSZT4",
+      "IMAGEM_ORDEM": 1,
+      "PRODUTO_ID": "b84a"
+    },
+    {
+      "id": "d183",
+      "IMAGEM_URL": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
+      "IMAGEM_ORDEM": 2,
+      "PRODUTO_ID": "b84a"
+    },
+    {
+      "id": "d428",
+      "IMAGEM_URL": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
+      "IMAGEM_ORDEM": 1,
+      "PRODUTO_ID": "63da"
+    },
+    {
+      "id": "0ba6",
+      "IMAGEM_URL": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
+      "IMAGEM_ORDEM": 1,
+      "PRODUTO_ID": "10d7"
     }
   ],
   "categories": [
@@ -42,6 +67,12 @@
       "id": "ad4f",
       "CATEGORIA_NOME": "Categoria Teste",
       "CATEGORIA_DESC": "Testando Funcionalidade da Categoria",
+      "CATEGORIA_ATIVO": true
+    },
+    {
+      "id": "d973",
+      "CATEGORIA_NOME": "Teste 2",
+      "CATEGORIA_DESC": "Testando Funcionalidade",
       "CATEGORIA_ATIVO": true
     }
   ],
